@@ -1,0 +1,72 @@
+.feed{
+    flex:5.5;
+}
+
+.feedWrapper{
+    padding: 20px;
+}
+
+.paginationBttns{
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationBttns a{
+    padding: 5px 8px;
+    margin: 7px;
+    border-radius: 5px;
+    border: 1px solid #1877F2;
+    color: #1877F2;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.paginationBttns a:hover{
+    color:white;
+    background-color: #1877F2 ;
+}
+
+.paginationActive a{
+    color:white;
+    background-color: #1877F2 ;
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width:480px) {
+    .paginationBttns{
+        width: 90%;
+        height: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 30px;
+        padding: 10px;
+    }
+    
+    .paginationBttns a{
+        padding: 4px 6px;
+        margin: 4px;
+        font-size: 10px;
+    }
+}
+/* TABLET VIEW */
+@media screen and (min-width:480px) and (max-width:1024px) {
+    .feed{
+        width: 40%;
+    }
+
+    .paginationBttns{
+        width: 90%;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 32px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+   
+}

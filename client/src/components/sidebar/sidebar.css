@@ -1,0 +1,125 @@
+.sidebar{
+    flex:3;
+    height:calc(100vh - 50px);
+    position:sticky;
+    top:50px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(175, 173, 173);
+}
+
+.sidebarWrapper{
+    padding: 20px;
+}
+
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebarListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebarIcon{
+    margin-right: 10px;
+}
+
+.sidebarButton{
+    width: 80px;
+    border:none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color:white;
+    border:1px solid #1877F2;
+    color: #1877F2;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.sidebarHr{
+    margin: 20px 0;
+}
+
+.sidebarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media screen and (max-width: 480px){
+    .sidebar{
+        display:none;
+    }
+    
+    .sidebarMobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height:calc(100vh - 50px);
+        position:absolute;
+        top:50px;
+        overflow-y: scroll;
+        background-color: #f1f1f1;
+
+    }
+
+    .closeSidebar{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 14px !important;
+    }
+
+    .sidebarIcon{
+        font-size: 14px !important;
+    }
+
+    .sidebarListItemText{
+        font-size: 11px;
+    }
+
+    .sidebarButton{
+        width: 70px;
+        padding: 5px;
+        font-size: 11px;
+    }
+}
+
+/* TABLET VIEW */
+@media screen and (min-width:480px) and (max-width:1024px) {
+    .sidebar{
+        width:30%;
+    }
+
+    .sidebarIcon{
+        font-size: 16px !important;
+    }
+
+    .sidebarListItemText{
+        font-size: 12px;
+    }
+
+    .sidebarButton{
+        width: 100px !important;
+        border:none;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 300;
+        background-color: #f7f3f3;
+    }
+}
